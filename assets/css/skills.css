@@ -1,0 +1,119 @@
+#skills {
+  display: flex;
+}
+.strength {
+  position: relative;
+  width: 45%;
+  height: inherit;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 1rem 2rem 1.4rem rgba(116, 115, 115, 0.5);
+  backdrop-filter: blur(1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+}
+.strength-box {
+  display: inline-block;
+  margin: 0 auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 1rem 1.5rem 2rem rgba(116, 115, 115, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.strength-box i {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.strength-info {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.skills-bars {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-bar-container {
+  position: relative;
+  width: 37rem;
+  display: flex;
+  padding: 2rem 1rem 1.5rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(1rem);
+  box-shadow: 1rem 2rem 3rem rgba(116, 115, 115, 0.5);
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 1.5rem 0;
+}
+.skill-bar-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(219, 219, 219, 0.1);
+  z-index: 10;
+}
+.skill-name {
+  position: relative;
+  width: 6rem;
+  text-align: right;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+.skill-value {
+  position: relative;
+  width: 4rem;
+  text-align: left;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+.skill-percent {
+  position: relative;
+  width: calc(100% - 10rem);
+  height: 2rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 1rem #0d2452;
+}
+.skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 2px #0d2452;
+  animation: bar 4s ease-in-out forwards;
+  background: #0d2452b0;
+}

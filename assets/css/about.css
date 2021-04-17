@@ -1,0 +1,112 @@
+.about-highlight {
+  position: relative;
+  width: 45%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.highlight-quote {
+  position: relative;
+  height: 45%;
+  font-size: 2rem;
+  text-align: justify;
+  padding: 0 3rem;
+}
+.highlight-quote--par {
+  width: 100%;
+  height: 60%;
+}
+.highlight-quote--heading {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#rolling-container {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid #0d2452;
+  border-radius: 50%;
+  animation: spin 50s linear infinite;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 1rem 1rem 5rem rgba(116, 115, 115, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rolling-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.rolling-item {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 1rem 0.5rem 2rem rgba(116, 115, 115, 0.5);
+  backdrop-filter: blur(1rem);
+  border: 2px solid #0d2452;
+  animation: spin 50s linear infinite reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roll-img {
+  position: relative;
+}
+.rolling-item img {
+  position: relative;
+  width: 4.2rem;
+  object-fit: contain;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.about-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: inherit;
+  padding: 0 3rem;
+  font-size: 1.5rem;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 0rem 2rem 1.4rem rgba(116, 115, 115, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+.about-info {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  font-weight: 700;
+}
